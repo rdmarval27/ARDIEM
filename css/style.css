@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+body{
+font-family: Arial, Helvetica, sans-serif, Times, serif;
+background-color: rgb(5, 5, 29);
+max-width: 100%;
+height: 100%;
+margin: 0%;
+padding: 0$;
+}
+
+.logo__nav{
+    width: 120px;
+    height: 90px;
+}
+
+/* BARRA DE NAVEGACION*/
+
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    font-weight: bold;
+} 
+
+ul li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    }
+
+/* BOTONES DE NAV */
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #04051D; 
+    color: #D3E2ED; 
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    box-shadow: 5px 5px 10px rgb(160, 248, 241);
+}
+
+/* mouse sobre botones */
+.boton:hover {
+    background-color: #ff4416; 
+    color: #ffffff; 
+    transform: scale(1.2); 
+}
+
+
+/* LETRAS CON CAMBIO DE COLOR*/
+.cambio-color {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@keyframes cambio {
+    0% {
+        color: rgb(255, 255, 255); 
+    }
+    50% {
+        color: rgb(0, 255, 221);
+    }
+    100% {
+        color: rgb(255, 255, 255);
+    }
+}
+
+.cambio-color {
+    animation: cambio 3s linear infinite;
+}
+
+/* PRODUCTOS DEL INDEX*/
+
+.productos__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 12px auto;
+    color: white;
+    background-color: white;
+    padding: 15px 15px 0 0;
+  }
+  
+  
+  .productos__item {
+    width: 25%; 
+    margin-bottom: 10px;
+  }
+  
+  
+  .productos__image {
+    width: 100%;
+    max-width: 100%; 
+    height: auto;
+  }
+
+  .productos__name {
+    color: rgb(5, 5, 29);
+    text-align: center;
+  }
+  
+  .productos__link {
+    text-align: center;
+    display: block;
+    margin-top: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .productos__item {
+      width: 100%; 
+    }
+  }
+
+
+
+
+  /* PARRAFOS DEL INDEX*/
+  .contenido-parrafo {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    color: #D3E2ED;
+    font-size: 16px;
+    text-align: justify;
+  }
+  
+  /* Estilos para  teléfonos */
+  @media (max-width: 768px) {
+    .contenido-parrafo {
+      width: 90%;
+    }
+  }
+  
+  /* Estilos para tablets */
+  @media (min-width: 769px) {
+    .contenido-parrafo {
+      width: 80%;
+      column-count: 2;
+    }
+  
+    p {
+      break-inside: avoid;
+    }
+  }
+  
+
+   
+  .contenido-parrafo {
+    column-count: 2;
+    column-gap: 20px;
+    padding-left: 3%;
+}
+
+
+.contenido-parrafo h2 {
+    margin-bottom: 1px 
+}
+
+.contenido-parrafo p {
+    margin-bottom: 10px;
+}
+
+/* FORMULARIO*/
+#contacto{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    color: rgb(255, 255, 255);
+  }
+  
+  footer {
+    text-align: center; 
+  }
+  
+  footer a img {
+    width: 60px;
+    height: auto;
+  }
+    
+  footer a {
+    display: inline-block;
+    margin: 0 40px;
+  }
+
+  .titulo-contacto{
+    padding-top: 10%;
+    text-align: center;
+    color: white;
+    margin: 20PX;
+  }
+
+  #contacto{
+    padding top: 5%;
+  }
+
+  /*botón de WhatsApp */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 100px; 
+    height: 100px; 
+    border: none;
+    background-color: #ffffff; 
+    border-radius: 100%;
+    text-align: center;
+    line-height: 100px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+
+.whatsapp-btn img {
+    width: 100px; 
+    height: 100px;
+    vertical-align: middle;
+    transition: transform 0.2s ease-in-out,
+}
+
+/* Efecto cursor */
+.whatsapp-btn:hover {
+    transform: scale(1.5); 
+    background-color: #cbfdcb;
+}
+
+
+
+
+/* EMPRESA */
+
+.empresa-h1 {
+    text-align: center;
+    color: #D3E2ED;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.empresa-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: justify;
+    color: #D3E2ED;
+}
+
+.empresa-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.empresa-image {
+    flex: 1;
+    text-align: center;
+}
+
+.empresa-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+/* PAGINA DE PRODUCTOS */
+
+/* Estilos generales */
+.productos__body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos de productos */
+.productos__body{
+    background-color: #04051D;
+}
+.producto {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: #D0E7F0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.productos__imagen {
+    width: 30%;
+    margin-right: 20px;
+    box-shadow: 5px 5px 10px rgba(16, 4, 37, 0.5);
+}
+
+.descripcion {
+    flex: 1;
+}
+
+.descripcion h2 {
+    margin: 0;
+    font-size: 50px;
+}
+
+.descripcion p {
+    margin: 15px 0;
+    font-size: 22px;
+}
+
+.producto a {
+    display: block;
+    color: #bd2c00;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 20px;
+
+}
+
+.productos__h1 {
+    color: white;
+    font-size: 60px;
+}
+
